@@ -1,0 +1,15 @@
+lib
+node_modules
+npm-debug.log
+tests/selenium-debug.log
+selenium-debug.log
+.reports
+reports
+tests/.reports
+tests/lib
+.screenshots
+tests/.screenshots
+.tmp
+public/lib
+coverage
+.httpserver_pid
