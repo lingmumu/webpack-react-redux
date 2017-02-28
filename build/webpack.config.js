@@ -85,4 +85,18 @@ config.plugins.push(
        template: SRC_PATH + '/pages/app.html'
    })
 );
+
+// 编译 sass
+config.module.loaders.push({
+   test: /\.(scss|css)$/,
+    loaders: ['style', 'css', 'sass', 'postcss']
+});
+
+// css autoprefix
+var precss = require('precss');
+var autoprefixer = require('autoprefixer');
+config.postcss = function () {
+  return [precss, autoprefixer];
+};
+
 module.exports = config;
