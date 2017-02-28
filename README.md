@@ -1,2 +1,4 @@
 # webpack-react-redux
-react-redux
+**install**
+
+npm install
